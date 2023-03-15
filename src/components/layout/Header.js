@@ -27,10 +27,10 @@ export const Header = () => {
             ) : (
               <>
                 {" "}
-                <Nav.Link to="/">
+                <Nav.Link onClick={() => navigate("/")}>
                   <i className="fa-solid fa-user"></i> Login
                 </Nav.Link>
-                <Nav.Link to="/register">
+                <Nav.Link onClick={() => navigate("/register")}>
                   <i className="fa-solid fa-pen-to-square"></i> Sign Up
                 </Nav.Link>
               </>
